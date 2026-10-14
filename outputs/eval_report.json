@@ -1,0 +1,62 @@
+{
+  "submission_file": "outputs\\submission.csv",
+  "total_rows": 728,
+  "schema_valid": true,
+  "golden_benchmarks_passed": 5,
+  "golden_benchmarks_total": 5,
+  "golden_benchmark_results": [
+    {
+      "route": "Delhi-Jaipur",
+      "week_of": "2024-11-11",
+      "expected_flag": "Yes",
+      "actual_flag": "Yes",
+      "expected_note": "",
+      "actual_note": "",
+      "passed": true,
+      "description": "Sample row 1: Unexplained spike"
+    },
+    {
+      "route": "Ahmedabad-Mumbai",
+      "week_of": "2025-01-20",
+      "expected_flag": "No (justified)",
+      "actual_flag": "No (justified)",
+      "expected_note": "N002",
+      "actual_note": "N002",
+      "passed": true,
+      "description": "Sample row 2: Festival week surcharge"
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-09-15",
+      "expected_flag": "Yes",
+      "actual_flag": "Yes",
+      "expected_note": "",
+      "actual_note": "",
+      "passed": true,
+      "description": "Sample row 3: Spike near non-justifying note N006"
+    },
+    {
+      "route": "Chennai-Bangalore",
+      "week_of": "2025-02-24",
+      "expected_flag": "No (justified)",
+      "actual_flag": "No (justified)",
+      "expected_note": "N001",
+      "actual_note": "N001",
+      "passed": true,
+      "description": "Ground truth: Highway flooding start"
+    },
+    {
+      "route": "Chennai-Bangalore",
+      "week_of": "2025-03-03",
+      "expected_flag": "No (justified)",
+      "actual_flag": "No (justified)",
+      "expected_note": "N001",
+      "actual_note": "N001",
+      "passed": true,
+      "description": "Ground truth: Highway flooding week 2"
+    }
+  ],
+  "negative_controls_passed": true,
+  "trap_notes_detected": [],
+  "overall_status": "PASSED"
+}

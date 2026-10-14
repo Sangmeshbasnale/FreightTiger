@@ -1,0 +1,33 @@
+{
+  "execution_profile": "Full run across 2940 shipments (728 route-weeks)",
+  "llm_accounting": {
+    "model_name": "None (Deterministic Templates for Reason Field)",
+    "llm_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd": 0.0,
+    "cost_basis": "Zero API cost. Deterministic templates guarantee 100% byte-for-byte reproducibility."
+  },
+  "embedding_accounting": {
+    "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "context_notes_embedded": 10,
+    "queries_embedded": 28,
+    "approx_embedding_input_tokens": 1500,
+    "embedding_calls": 2,
+    "cost_usd": 0.0,
+    "cost_basis": "Open-source model executed locally on CPU via SentenceTransformers & FAISS."
+  },
+  "total_financial_cost_usd": 0.0,
+  "runtime_environment": {
+    "libraries": [
+      "pandas",
+      "numpy",
+      "sentence-transformers",
+      "faiss-cpu",
+      "pytest",
+      "pyyaml"
+    ],
+    "paid_apis_used": false,
+    "cloud_dependencies": false
+  }
+}

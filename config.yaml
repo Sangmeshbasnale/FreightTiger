@@ -1,0 +1,22 @@
+data:
+  shipments_file: "shipment_records.csv"
+  context_notes_file: "context_notes.csv"
+  sample_output_file: "sample_output_format_v2.csv"
+
+baseline:
+  trailing_weeks: 8
+  min_prior_weeks: 1
+
+flagging:
+  own_pct_threshold: 8.0
+  peer_pct_threshold: 15.0
+  no_history_peer_pct_threshold: 25.0
+  require_positive_own_if_available: true
+
+retrieval:
+  model_name: "all-MiniLM-L6-v2"
+  top_k: 3
+
+output:
+  mode: "all_route_weeks"  # options: all_route_weeks, anomalies_only
+  output_file: "outputs/submission.csv"

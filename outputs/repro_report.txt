@@ -1,0 +1,11 @@
+=== REPRODUCIBILITY COMPARISON REPORT ===
+Comparing 3 runs:
+  Run 1: outputs/run_1/submission.csv (728 rows)
+  Run 2: outputs/run_2/submission.csv (728 rows)
+  Run 3: outputs/run_3/submission.csv (728 rows)
+
+Run 1 vs Run 2 Identical: True
+Run 1 vs Run 3 Identical: True
+Run 2 vs Run 3 Identical: True
+
+Overall Determinism Verdict: 100% REPRODUCIBLE (ZERO DIFF)
